@@ -5,20 +5,21 @@
     <script src="https://use.fontawesome.com/ebc807e221.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="styles.css" type="text/css" rel="stylesheet">
-    <title></title>
+    <title>Much Doge</title>
   </head>
   <body>
     <aside class="side-menu">
-      <section class="side-menu">
-        <select id="user-select"> 
+      <section class="profile-menu" id="side-menu-1">
+        <img id="profile-pic" src="images/doge.jpg" alt="shiba inu dog image">
+        <select id="user-select" role="person drop-down menu"> 
           <option value="value1">Newton Barley</option> 
           <option value="value2" selected>Doge</option>
           <option value="value3">Lord Business</option>
         </select>
       </section>
-      <section class="side-menu">
-        <p class="side-menu">Main</p>
-        <ul>
+      <section class="side-menu" id="side-menu-2">
+        <p class="side-menu" id="main-side-menu">Main</p>
+        <ul aria-labelledby="main-side-menu">
           <li>home</li>
           <li>jobs</li>
           <li>resumes</li>
@@ -26,24 +27,26 @@
           <li>calendar</li>
         </ul>
       </section>
-      <section class="side-menu">
-        <p class="side-menu">Admin</p>
-        <ul>
+      <section class="side-menu" id="side-menu-3">
+        <p class="side-menu" id="admin-side-menu">Admin</p>
+        <ul aria-labelledby="admin-side-menu">
           <li>users</li>
           <li>locations</li>
           <li>workflows</li>
-          <li>job Boards</li>
+          <li>job boards</li>
           <li>social</li>
         </ul>
       </section>
-      <section class="side-menu">
-        <input type="checkbox" name="Administrative"><label>Administrative</label>
-        <input type="checkbox" name="Design"><label>Design</label>
-        <input type="checkbox" name="Executive"><label>Executive</label>
-        <input type="checkbox" name="Human Resources"><label>Human Resources</label>
+      <section class="side-menu" id="side-menu-4">
+        <p class="side-menu" id="categories-side-menu">Categories</p>
+        <input type="checkbox" id="admin-checkbox"><label for="admin-checkbox">Administrative</label>
+        <input type="checkbox" id="design-checkbox"><label for="design-checkbox">Design</label>
+        <input type="checkbox" id="executive-checkbox"><label for="executive-checkbox">Executive</label>
+        <input type="checkbox" id="hr-checkbox"><label id="hr-checkbox">Human Resources</label>
       </section>
     </aside>
 
+  <section id="main-wrapper"> 
     <nav class="main-nav">
       <form>
         <button class="menu-btn"></button>
@@ -175,7 +178,7 @@
       </article>
 
     </main>
-
+  </section> 
     <script src="script.js" type="text/javascript"></script>
   </body>
 </html>
