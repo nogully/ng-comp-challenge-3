@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <script src="https://use.fontawesome.com/ebc807e221.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+    <aside class="side-menu">
+      <section class="side-menu">
+        <select id="user-select"> 
+          <option value="value1">Newton Barley</option> 
+          <option value="value2" selected>Doge</option>
+          <option value="value3">Lord Business</option>
+        </select>
+      </section>
+      <section class="side-menu">
+        <p class="side-menu">Main</p>
+        <ul>
+          <li>home</li>
+          <li>jobs</li>
+          <li>resumes</li>
+          <li>tasks</li>
+          <li>calendar</li>
+        </ul>
+      </section>
+      <section class="side-menu">
+        <p class="side-menu">Admin</p>
+        <ul>
+          <li>users</li>
+          <li>locations</li>
+          <li>workflows</li>
+          <li>job Boards</li>
+          <li>social</li>
+        </ul>
+      </section>
+      <section class="side-menu">
+        <input type="checkbox" name="Administrative"><label>Administrative</label>
+        <input type="checkbox" name="Design"><label>Design</label>
+        <input type="checkbox" name="Executive"><label>Executive</label>
+        <input type="checkbox" name="Human Resources"><label>Human Resources</label>
+      </section>
+    </aside>
+
+    <nav class="main-nav">
+      <form>
+        <button class="menu-btn"></button>
+        <input class="main-search" type="text">
+        <button class="add-person-btn"></button>
+        <button class="list-btn"></button>
+        <button class="network-btn"></button>
+      </form>
+    </nav>
+
+    <header>
+      <div>
+        <div>
+          <h1>Much Doge</h1>
+          <p class="location-p">Kyoto, Japan</p><span>•</span>
+          <a href="#" class="preview-text">Preview this post</a>
+        </div>
+        <div >
+          <button class="rounded-btn" id="open-btn"></button>
+          <button class="rounded-btn" id="bookmark-btn"></button>
+          <button class="rounded-btn" id="edit-btn"></button>
+          <button class="rounded-btn" id="network-btn"></button>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li>summary</li>
+          <li>applicants</li>
+          <li>job board</li>
+          <li>interviews</li>
+          <li>activity</li>
+          <li>broadcast</li>
+          <li>notification</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div>
+          <span class="circle-span-1"></span>
+          <span class="circle-span-2"></span>
+          <span class="circle-span-3"></span>
+          <button class="rounded-btn" id="total-btn"></button>
+        </div>
+        <div>
+          <span class="circle-span-1">GRAPH IMAGE</span>
+          <button class="rounded-btn" id="applicants-btn"></button>
+        </div>
+      </section>
+
+      <div>
+        <span class="paragraph-rule"></span>
+        <button class="rounded-btn" id="carrot-btn"></button>
+        <span class="paragraph-rule"></span>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Job Description</th>
+            <th><button class="sq-button" id="table-edit-btn">Edit</button></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="small-caps">position title</td>
+            <td>Internet Meme</td>
+          </tr>
+          <tr>
+            <td class="small-caps">location</td>
+            <td>Kyoto, Japan</td>
+          </tr>
+          <tr>
+            <td class="small-caps">employment type</td>
+            <td>Extra full time parts</td>
+          </tr>
+          <tr>
+            <td class="small-caps">experience</td>
+            <td>Much muchness</td>
+          </tr>
+          <tr>
+            <td class="small-caps">status</td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <td class="small-caps">description</td>
+            <td>Dog bowl heel beagle roll over husky puppy, pomsky pit bull catch bring it. Shake dog peanut butter squeak toy sit rottweiler bark. Bark bulldog poodle beagle dog toy fetch dog toy bell bulldog.</td>
+          </tr>
+          <tr>
+            <td class="small-caps">hiring lead</td>
+            <td>Much Doge</td>
+          </tr>
+          <tr>
+            <td class="small-caps">approved salary</td>
+            <td>$1.6 million</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <article>
+        <div class="social-div">
+          <button class="sq-button" id="facebook-btn">Post to Facebook</button>
+          <button class="sq-button" id="tweet-btn">Tweet this Job</button>
+          <button class="sq-button" id="linkedin-btn">Post to Linkedin</button>
+        </div>
+        <div class="widget-div">
+          <h2></h2>
+          <p>Roll over great dance release spin jump catch leave it leave it lab.</p>
+          <span>
+            <p class="code-snip">http://frontend.turing.io/projects/m1-static-comp-3.html</p>
+            <button class="copy-button" id="permalink-btn">Copy</button>
+          </span>
+        </div>
+        <div class="widget-div">
+          <h2></h2>
+          <p>Catch bulldog tail kong, bite english mastiff tug bark dog toy leash.</p>
+          <span>
+            <p class="code-snip">&lt;script src="script.js" type="text/javascript"&gt;&lt;/script&gt;</p>
+            <button class="copy-button" id="script-btn">Copy</button>
+          </span>
+        </div>
+        <div class="widget-div">
+          <h2></h2>
+          <p>Come beagle kibbles poodle heel bark leave it stay maltese.</p>
+          <span>
+            <p class="code-snip">doge@awesome.com</p>
+          </span>
+        </div>
+      </article>
+
+    </main>
+
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
