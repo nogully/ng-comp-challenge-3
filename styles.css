@@ -8,7 +8,7 @@
 /*STRUCTURAL ELEMENTS*/
 body {
   display: grid;
-  grid-template-columns: 15% auto 35%;
+  grid-template-columns: 15% auto 30%;
   grid-template-rows: 5% 35% 60%;
   grid-template-areas: 
     "sidebar nav ."
@@ -26,11 +26,11 @@ aside {
   grid-row: 1 / span 3;
 }
 
-
 main {
   display: flex;
   background-color: #edf2f8;
   flex-direction: column;
+  padding: 2em 2em 0em 2em;
 }
 
 header {
@@ -56,6 +56,7 @@ article {
   background-color: #edf2f8;
   grid-row: 3 / span 1;
   grid-column: 3 / span 1;
+  padding: 2em;
 }
 
 /*TYPOGRAPHY*/
@@ -82,6 +83,13 @@ h1 {
   color: #333;
 }
 
+h3 {
+  color: #666;
+  font-size: 1.25em;
+  font-weight: 700;
+  margin: 10px 0px;
+}
+
 h4 {
   margin-bottom: 10px;
 }
@@ -92,7 +100,7 @@ h5 {
 }
 
 a {
-  color: #33cccc;
+  color: #33CCCC;
   text-decoration: none;
 }
 
@@ -100,7 +108,6 @@ a:hover {
   color: #009999;
 }
 
-location
 
 /*SIDEBAR*/
 .profile-menu {
@@ -239,11 +246,14 @@ i {
 
 p,
 .preview-text {
-  color: #333;
+  color: #666;
   display: inline-block;
   text-decoration-line: none;
 }
 
+.preview-text {
+  color: #33CCCC;
+}
 
 /*TAB NAV*/
 #tab-nav {
@@ -274,6 +284,7 @@ p,
   display: flex;
   flex-direction: column;
 }
+
 .circle-div {
   display: flex;
   justify-content: space-around;
@@ -283,16 +294,16 @@ p,
   background-color: rgba(0, 0, 0, 0);
   border: 10px;
   border-style: solid;
-  border-right-color: #3399CC;
-  border-left-color: #3399CC;
-  border-bottom-color: #3399CC;
+  border-right-color: #33CCCC;
+  border-left-color: #33CCCC;
+  border-bottom-color: #33CCCC;
   border-top-color: #CCC;
   border-radius: 50%;
-  color: #333;
+  color: #354052;
   display: inline-block;
   font-size: 3em;
-  width: 3em;
-  height: 3em;
+  width: 3.1em;
+  height: 3.1em;
   padding: .8em 0;
   text-align: center;
   line-height: .5em;
@@ -305,25 +316,84 @@ p,
   font-weight: 700;
 }
 
+.bar-chart-section {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto; 
+}
+
 .graph-image {
   max-height: 200px;
   margin: 0 auto;
+  align-self: center;
 }
 
 /*MAIN PARAGRAPH RULE*/
 .paragraph-rule-holder {
   background-color: #edf2f6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 15px;
   width: 100%;
 }
 .paragraph-rule {
+  background-color: pink;
   border-top: 2px solid #CCC;
+  height: 2px;
+  width: 45%;
 }
 
 /*MAIN TABLE*/
+table {
+  background-color: white;
+  border: 0;
+  box-shadow: 0px 0px 3px #CCC;
+  height: 95%;
+  font-size: 1.2em;
+  font-weight: 700;
+}
 
-/*BUTTONS*/
+thead {
+  color: #FFF;
+  background-color: #666;
+  font-weight: 700;
+  font-variant: small-caps;
+  height: 100px;
+}
+
+tr td {
+  border-bottom: 1px solid #CCC;
+}
+
+.table-header {
+  padding: 20px;
+}
+
+.table-column1 {
+  font-variant: small-caps;
+  padding: 10px;
+  min-width: 150px;
+}
+
+.table-column2 {
+  font-weight: 400;
+  min-width: 300px;
+  padding: 10px;
+}
 
 /*SIDE ARTICLE*/
+.social-div {
+  display: flex;
+  flex-direction: column;
+}
+
+#button-widget-div {
+  border-bottom: 1px solid #CCC;
+  border-top: 1px solid #CCC;
+  margin: 20px 0px;
+}
 
 /*BUTTONS*/
 #main-search-div,
@@ -337,6 +407,7 @@ p,
 
 .top-nav-btn:hover {
   background-color: #33cccc;
+  border: none;
   color: #FFF;
   text-decoration: none;
 }
@@ -369,17 +440,70 @@ button i {
 #applicants-btn,
 #total-btn,
 #open-btn {
+  background-color: #FFF;
   border-radius: 2em;
   padding: 1em;
   width: auto;
   margin: auto;
 }
 
+#open-btn {
+  margin: 0;
+}
+
+.fa-circle {
+  color: lightgreen;
+}
+
 #total-btn{
   display: block;
 }
-/*.rounded-btn:hover {
-    box-shadow: 0 0 3px gray;
 
-}*/
+.sq-button {
+  border: 0;
+  font-size: 1em;
+}
 
+#table-edit-btn {
+  font-variant: small-caps;
+}
+
+.rounded-btn:hover {
+  background-color: #33CCCC;
+  border-color: #33CCCC;
+  box-shadow: 0 0 4px #CCC;
+  color: #FFF;
+}
+
+#applicants-btn:hover,
+#total-btn:hover,
+#open-btn:hover {
+  background-color: #33CCCC;
+  border-color: #33CCCC;
+}
+
+.social-button {
+  color: #FFF;
+  font-weight: 700;
+  padding: 1em;
+  margin: .5em 0em;
+}
+
+#facebook-btn {
+  background-color: #4a6ec2;
+  margin-top: 0;
+}
+
+#twitter-btn {
+  background-color: #01aaef;
+}
+
+#linkedin-btn {
+  background-color: #047ebd;
+}    
+
+.social-button i {
+  float: left;
+  font-size: 1.5em;
+  margin-left: 10px;
+}

@@ -56,20 +56,20 @@
 
     <nav class="top-nav">
       <form class="main-nav">
-        <button class="top-nav-btn" id="hamburger-btn">
+        <button class="top-nav-btn" id="hamburger-btn" aria-label="Reveal Menu">
           <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
         <div id="main-search-div">
           <i class="fa fa-search" aria-hidden="true"></i>
-          <input class="main-search" type="text" placeholder="Search for a wow, derp or boop"> 
+          <input class="main-search" type="text" placeholder="Search for a wow, derp or boop" aria-label="Search Bar"> 
         </div>
-        <button class="top-nav-btn" id="add-person-btn">
+        <button class="top-nav-btn" id="add-person-btn" aria-label="Add Contact">
           <i class="fa fa-user-plus" aria-hidden="true"></i>
         </button>
-        <button class="top-nav-btn" id="list-btn">
+        <button class="top-nav-btn" id="list-btn" aria-label="List Contacts">
           <i class="fa fa-list" aria-hidden="true"></i>
         </button>
-        <button class="top-nav-btn" id="network-btn">
+        <button class="top-nav-btn" id="network-btn" aria-label="Show Network">
           <i class="fa fa-th" aria-hidden="true"></i>
         </button>
       </form>
@@ -83,7 +83,8 @@
           <a href="#" class="preview-text">Preview this post</a>
         </div>
         <div id="profile-button-div">
-          <button class="rounded-btn" id="open-btn">Open</button>
+          <button class="rounded-btn" id="open-btn"><i class="fa fa-circle" aria-hidden="true"></i>
+          Open</button>
           <button class="rounded-btn" id="bookmark-btn">
             <i class="fa fa-bookmark" aria-hidden="true"></i>
           </button>
@@ -97,7 +98,7 @@
       </div>
       <nav >
         <ul id="tab-nav">
-          <li class="tab-li">summary</li>
+          <li class="tab-li" id="summary-tab">summary</li>
           <li class="tab-li">applicants</li>
           <li class="tab-li">job board</li>
           <li class="tab-li">interviews</li>
@@ -110,79 +111,77 @@
 
    
       <article class="charts-article">
-      <section class="pie-section">
-        <div class="circle-div">
-          <div class="pie-div" id="pd-1">3,154
-            <span class="small-font-span">derps</span>
-          </div>
-            
-          <div class="pie-div" id="pd-2">1,546
-            <span class="small-font-span">boops</span>
-          </div>
+        <section class="pie-section">
+          <div class="circle-div">
+            <div class="pie-div" id="pd-1">3,154
+              <span class="small-font-span">derps</span>
+            </div>
+              
+            <div class="pie-div" id="pd-2">1,546
+              <span class="small-font-span">boops</span>
+            </div>
 
-          <div class="pie-div" id="pd-3">912
-            <span class="small-font-span">much</span>
+            <div class="pie-div" id="pd-3">912
+              <span class="small-font-span">pants</span>
+            </div>
           </div>
-        </div>
-        <div>
+    
           <button class="rounded-btn" id="total-btn">Totals: Out of 4,321 views</button>
-        </div>
-      </section>
-      <section class="bar-chart-section">
-        <div>
-          <img class="graph-image" src="images/BarChartExample.gif" alt="bar chart image">
-          <button class="rounded-btn" id="applicants-btn">Applicants Per Day</button>
-        </div>
-      </section>
+    
+        </section>
+        <section class="bar-chart-section">
+            <img class="graph-image" src="images/bar-chart.png" alt="bar chart image">
+            <button class="rounded-btn" id="applicants-btn">Applicants Per Day</button>
+        </section>
       </article>
-            <div class="paragraph-rule-holder">
+      <div class="paragraph-rule-holder">
         <span class="paragraph-rule"></span>
-        <button class="rounded-btn" id="carrot-btn"></button>
+        <button class="rounded-btn" id="carrot-btn" aria-label="show and hide button"><i class="fa fa-angle-up" aria-hidden="true"></i>
+        </button>
         <span class="paragraph-rule"></span>
       </div>
-       </header>
-       <main>
+    </header>
 
-
+   <main>
       <table>
         <thead>
           <tr>
-            <th>Job Description</th>
-            <th><button class="sq-button" id="table-edit-btn">Edit</button></th>
+            <th class="table-header">job description</th>
+            <th class="table-header"><button class="sq-button" id="table-edit-btn"><i class="fa fa-pencil" aria-hidden="true"></i>edit</button></th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="small-caps">position title</td>
-            <td>Internet Meme</td>
+            <td class="table-column1">position title</td>
+            <td class="table-column2">Internet Meme</td>
           </tr>
           <tr>
-            <td class="small-caps">location</td>
-            <td>Kyoto, Japan</td>
+            <td class="table-column1">location</td>
+            <td class="table-column2">Kyoto, Japan</td>
           </tr>
           <tr>
-            <td class="small-caps">employment type</td>
-            <td>Extra full time parts</td>
+            <td class="table-column1">employment type</td>
+            <td class="table-column2">Such full time</td>
           </tr>
           <tr>
-            <td class="small-caps">experience</td>
-            <td>Much muchness</td>
+            <td class="table-column1">experience</td>
+            <td class="table-column2">So much</td>
           </tr>
           <tr>
-            <td class="small-caps">status</td>
-            <td>Open</td>
+            <td class="table-column1">status</td>
+            <td class="table-column2">Open</td>
           </tr>
           <tr>
-            <td class="small-caps">description</td>
-            <td>Dog bowl heel beagle roll over husky puppy, pomsky pit bull catch bring it. Shake dog peanut butter squeak toy sit rottweiler bark. Bark bulldog poodle beagle dog toy fetch dog toy bell bulldog.</td>
+            <td class="table-column1">description</td>
+            <td class="table-column2">Such heel beagle roll over husky puppy, much pit bull catch bring it. So dog peanut butter squeak toy sit bark. Very beagle dog toy fetch.</td>
           </tr>
           <tr>
-            <td class="small-caps">hiring lead</td>
-            <td>Much Doge</td>
+            <td class="table-column1">hiring lead</td>
+            <td class="table-column2">Shiba Inu</td>
           </tr>
           <tr>
-            <td class="small-caps">approved salary</td>
-            <td>$1.6 million</td>
+            <td class="table-column1">approved salary</td>
+            <td class="table-column2">$1.6 million</td>
           </tr>
         </tbody>
       </table>
@@ -190,20 +189,32 @@
 
     <article>
       <div class="social-div">
-        <button class="sq-button" id="facebook-btn">Post to Facebook</button>
-        <button class="sq-button" id="tweet-btn">Tweet this Job</button>
-        <button class="sq-button" id="linkedin-btn">Post to Linkedin</button>
+        <button class="sq-button social-button" id="facebook-btn">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          Post to Facebook
+        </button>
+        <button class="sq-button social-button" id="twitter-btn">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          Tweet this Job
+        </button>
+        <button class="sq-button social-button" id="linkedin-btn">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          Post to Linkedin
+        </button>
       </div>
       <div class="widget-div">
-        <h2></h2>
+        <h3>
+          <i class="fa fa-globe" aria-hidden="true"></i>
+          Link to this job
+        </h3>
         <p>Roll over great dance release spin jump catch leave it leave it lab.</p>
         <span>
           <p class="code-snip">http://frontend.turing.io/projects/m1-static-comp-3.html</p>
           <button class="copy-button" id="permalink-btn">Copy</button>
         </span>
       </div>
-      <div class="widget-div">
-        <h2></h2>
+      <div class="widget-div" id="button-widget-div">
+        <h3>Use the button widget</h3>
         <p>Catch bulldog tail kong, bite english mastiff tug bark dog toy leash.</p>
         <span>
           <p class="code-snip">&lt;script src="script.js" type="text/javascript"&gt;&lt;/script&gt;</p>
@@ -211,7 +222,7 @@
         </span>
       </div>
       <div class="widget-div">
-        <h2></h2>
+        <h3>Upload resumes by email</h3>
         <p>Come beagle kibbles poodle heel bark leave it stay maltese.</p>
         <span>
           <p class="code-snip">doge@awesome.com</p>
