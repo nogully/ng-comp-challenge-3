@@ -2,6 +2,7 @@
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
   margin: 0px;
+  outline: none;
 }
 
 /*STRUCTURAL ELEMENTS*/
@@ -27,7 +28,9 @@ aside {
 
 
 main {
+  display: flex;
   background-color: #edf2f8;
+  flex-direction: column;
 }
 
 header {
@@ -75,6 +78,10 @@ li:hover {
   color: #FFF;
 }
 
+h1 {
+  color: #333;
+}
+
 h4 {
   margin-bottom: 10px;
 }
@@ -92,6 +99,8 @@ a {
 a:hover {
   color: #009999;
 }
+
+location
 
 /*SIDEBAR*/
 .profile-menu {
@@ -203,6 +212,7 @@ i {
   size: 4em;
 }
 
+
 /*HEADER*/
 #header-profile-div {
   display: flex;
@@ -229,9 +239,11 @@ i {
 
 p,
 .preview-text {
+  color: #333;
   display: inline-block;
   text-decoration-line: none;
 }
+
 
 /*TAB NAV*/
 #tab-nav {
@@ -253,7 +265,59 @@ p,
   border-bottom: 2px solid #333;
 }
 
+/*CHARTS*/
+.charts-article {
+  display: flex;
+  flex-direction: row;
+}
+.pie-section {
+  display: flex;
+  flex-direction: column;
+}
+.circle-div {
+  display: flex;
+  justify-content: space-around;
+
+}
+.pie-div {
+  background-color: rgba(0, 0, 0, 0);
+  border: 10px;
+  border-style: solid;
+  border-right-color: #3399CC;
+  border-left-color: #3399CC;
+  border-bottom-color: #3399CC;
+  border-top-color: #CCC;
+  border-radius: 50%;
+  color: #333;
+  display: inline-block;
+  font-size: 3em;
+  width: 3em;
+  height: 3em;
+  padding: .8em 0;
+  text-align: center;
+  line-height: .5em;
+  margin: 20px;
+}
+
+.small-font-span {
+  font-size: 20px;
+  font-variant: small-caps;
+  font-weight: 700;
+}
+
+.graph-image {
+  max-height: 200px;
+  margin: 0 auto;
+}
+
 /*MAIN PARAGRAPH RULE*/
+.paragraph-rule-holder {
+  background-color: #edf2f6;
+  width: 100%;
+}
+.paragraph-rule {
+  border-top: 2px solid #CCC;
+}
 
 /*MAIN TABLE*/
 
@@ -293,7 +357,7 @@ p,
   color: #999;
   text-align: center;
   text-decoration: none;
-  background: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
   font-size: 1em;
   font-weight: bold;
 }
@@ -302,12 +366,18 @@ button i {
   margin: 0 auto;
 }
 
+#applicants-btn,
+#total-btn,
 #open-btn {
   border-radius: 2em;
   padding: 1em;
   width: auto;
+  margin: auto;
 }
 
+#total-btn{
+  display: block;
+}
 /*.rounded-btn:hover {
     box-shadow: 0 0 3px gray;
 
