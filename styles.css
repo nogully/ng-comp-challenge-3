@@ -139,7 +139,6 @@ select {
   border-top: 3px solid #28303F;
   display: flex;
   flex-direction: column;
-  padding: 15px;
 }
 
 .checkbox {
