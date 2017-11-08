@@ -5,7 +5,7 @@
     <script src="https://use.fontawesome.com/ebc807e221.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link href="styles.css" type="text/css" rel="stylesheet">
-    <title>Doge Kabosu</title>
+    <title>Internet Meme</title>
   </head>
   <body>
     <aside class="aside-menu">
@@ -36,19 +36,19 @@
       <section class="side-menu" id="side-menu-4">
         <h5 class="side-menu-h5" id="categories-side-menu">Much Categories</h5>
         <label for="admin-checkbox">
-          <i class="fa fa-check-square-o" aria-hidden="true"></i>
+          <i class="fa fa-check-square-o" aria-hidden="true" id="admin-checkbox"></i>
           Boxes
         </label>
         <label for="design-checkbox">
-          <i class="fa fa-check-square-o" aria-hidden="true"></i>
+          <i class="fa fa-check-square-o" aria-hidden="true" id="design-checkbox"></i>
           Importants
         </label>
         <label for="executive-checkbox">
-          <i class="fa fa-check-square-o" aria-hidden="true"></i>
+          <i class="fa fa-check-square-o" aria-hidden="true" id="executive-checkbox"></i>
           Very Check
         </label>
-        <label id="hr-checkbox">
-          <i class="fa fa-check-square-o" aria-hidden="true"></i>
+        <label for="hr-checkbox">
+          <i class="fa fa-check-square-o" aria-hidden="true" id="hr-checkbox"></i>
           Hoomans
         </label>
       </section>
@@ -79,8 +79,10 @@
       <div id="header-profile-div">
         <div id="name-div">
           <h1>Internet Meme</h1>
-          <p class="location-p">Kyoto, Japan</p><span id="bullet">•</span>
-          <a href="#" class="preview-text">Preview this post</a>
+          <span id="profile-subtext">
+            <p class="location-p">Kyoto, Japan</p><span id="bullet">•</span>
+            <a href="#" class="preview-text">Preview this post</a> 
+          </span>
         </div>
         <div id="profile-button-div">
           <button class="rounded-btn" id="open-btn"><i class="fa fa-circle" aria-hidden="true"></i>
@@ -99,12 +101,13 @@
       <nav >
         <ul id="tab-nav">
           <li class="tab-li" id="summary-tab">summary</li>
-          <li class="tab-li">applicants</li>
-          <li class="tab-li">job board</li>
-          <li class="tab-li">interviews</li>
-          <li class="tab-li">activity</li>
-          <li class="tab-li">broadcast</li>
-          <li class="tab-li">notification</li>
+          <li class="tab-li other-tabs">applicants</li>
+          <li class="tab-li other-tabs">job board</li>
+          <li class="tab-li other-tabs">interviews</li>
+          <li class="tab-li other-tabs">activity</li>
+          <li class="tab-li other-tabs">broadcast</li>
+          <li class="tab-li other-tabs">notification</li>
+          <li class="tab-li menu-tab">menu<i class="fa fa-caret-down" id="menu-caret" aria-hidden="true"></i></li>
         </ul>
       </nav>
    
@@ -126,7 +129,7 @@
             </div>
           </div>
     
-          <button class="rounded-btn" id="total-btn">Totals: Out of 4,321 views</button>
+          <button class="rounded-btn" id="total-btn">Totals: Out of 5,612 views</button>
     
         </section>
         <section class="bar-chart-section">
@@ -147,7 +150,7 @@
         <thead>
           <tr>
             <th class="table-header">job description</th>
-            <th class="table-header"><button class="sq-button" id="table-edit-btn"><i class="fa fa-pencil" aria-hidden="true"></i>edit</button></th>
+            <th class="table-header"><button class="sq-button" id="table-edit-btn" aria-label="Edit button"><i class="fa fa-pencil" aria-hidden="true"></i>edit</button></th>
           </tr>
         </thead>
         <tbody>
@@ -177,11 +180,15 @@
           </tr>
           <tr>
             <td class="table-column1">hiring lead</td>
-            <td class="table-column2">Shiba Inu</td>
+            <td class="table-column2 hiring-pic-cell">
+              <span class="hiring-pic-span">
+              <img id="hiring-pic" src="images/doge.jpg" alt="shiba inu dog image">Shiba Inu
+              </span>
+            </td>
           </tr>
           <tr>
-            <td class="table-column1">approved salary</td>
-            <td class="table-column2">$1.6 million</td>
+            <td class="table-column1 last-row">approved salary</td>
+            <td class="table-column2 last-row">$1.6 million</td>
           </tr>
         </tbody>
       </table>

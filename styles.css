@@ -139,7 +139,15 @@ a:hover {
   min-width: 100px;
   margin: 10px;
   padding: 10px;
-  
+}
+
+#hiring-pic {
+  border: 0;
+  border-radius: 50%;
+  display: inline-block;
+  height: 40px;
+  margin-right: 10px;
+  width: 40px;
 }
 
 #side-menu-1 {
@@ -290,10 +298,15 @@ p,
   font-weight: 700;
 }
 
-.tab-li:hover {
+.tab-li:hover, 
+#summary-tab {
   background-color: #FFF;
   color: #333;
   border-bottom: 2px solid #333;
+}
+
+.menu-tab {
+  display: none;
 }
 
 /*CHARTS*/
@@ -367,7 +380,7 @@ p,
   width: 45%;
 }
 
-/*MAIN TABLE*/
+/*TABLE*/
 table {
   background-color: white;
   border: 0;
@@ -389,8 +402,13 @@ tr td {
   border-bottom: 1px solid #CCC;
 }
 
+.last-row {
+  border-bottom: 0px;
+}
+
 .table-header {
   padding: 20px;
+  text-align: left;
 }
 
 .table-column1 {
@@ -403,6 +421,12 @@ tr td {
   font-weight: 400;
   min-width: 300px;
   padding: 10px;
+}
+
+.hiring-pic-span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 /*SIDE ARTICLE*/
@@ -425,6 +449,12 @@ tr td {
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+
+.fa-globe, 
+.fa-paper-plane,
+.fa-hand-o-up {
+  margin: 0px 10px 0px 0px;
 }
 
 /*BUTTONS*/
@@ -497,7 +527,17 @@ button i {
 }
 
 #table-edit-btn {
+  background-color: #444;
+  color: #FFF;
   font-variant: small-caps;
+  font-weight: 700;
+  min-width: 80px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.fa-pencil {
+  padding: 5px;
 }
 
 .rounded-btn:hover {
@@ -528,6 +568,7 @@ button i {
   margin-left: 10px;
 }
 
+#table-edit-btn:hover,
 .social-button:hover {
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
 }
@@ -598,6 +639,7 @@ button i {
   }
 
   .table-column2 {
+    font-size: .9em;
     min-width: 200px;
   }
 
@@ -656,6 +698,16 @@ button i {
     grid-row: 4 / span 1;
   }
 
+  .copy-button {
+    height: 40px;
+  }
+
+  .fa-globe, 
+  .fa-paper-plane,
+  .fa-hand-o-up {
+    margin: 0px 10px;
+  }
+
   #profile-button-div {
     flex-wrap: wrap;
   }
@@ -670,6 +722,11 @@ button i {
     margin-right: 10px;
   }
 
+  #total-btn, 
+  #applicants-btn {
+    margin: 10px auto;
+  }
+
   .charts-article {
     flex-direction: column;
   }
@@ -681,10 +738,12 @@ button i {
   .table-column2 {
     min-width: 200px;
   }
-    
-  .code-span {
-    flex-direction: column;
+
+  article {
+    padding: 2em 5em;
   }
+
+
 
 }
 
@@ -703,56 +762,6 @@ button i {
   #profile-button-div {
     width: 100%;
   }
-}
-
-@media screen and (max-width: 530px){
-form {
-  grid-template-columns: 15% 40% 15% 15% 15%;
-  grid-template-rows: 100%;
-  grid-template-areas: "1 2 3 4 5";
-  height: 5rem;
-}
-
-  .main-search {
-    width: 50%;
-  }
-
-  #profile-button-div {
-    align-items: center;
-    width: 100%;
-  }
-
-  #name-div {
-    margin-left: 0px;
-    width: 100%;
-  }
-
-  #header-profile-div {
-    padding: 10px;
-    margin: 0;
-  }
-
-  h1 {
-    text-align: center;
-  }
-
-  .circle-div {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .graph-image {
-    min-width: unset;
-    width: 100%;
-  }
-
-  .charts-article {
-    padding: 5px;
-  }
-
-  .small-font-span {
-    margin: 0px 10px;
-  }
 
   .pie-div {
     background-color: rgba(0, 0, 0, 0);
@@ -769,6 +778,81 @@ form {
     margin: 5px 0px;
   }
 
+  .small-font-span {
+    margin: 0px 10px;
+  }
+
+  .code-span {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 530px){
+  form {
+    grid-template-columns: 15% 40% 15% 15% 15%;
+    grid-template-rows: 100%;
+    grid-template-areas: "1 2 3 4 5";
+    height: 5rem;
+  }
+
+  .main-search {
+    width: 50%;
+  }
+
+  #profile-subtext {
+    padding: 5px 10px;
+  }
+
+  #profile-button-div {
+    align-items: center;
+    width: 100%;
+  }
+
+  #name-div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    width: 100%;
+    padding: 0px;
+  }
+
+  #header-profile-div {
+    padding: 10px;
+    margin: 0;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .other-tabs {
+    display: none;
+  }
+
+  .menu-tab {
+    display: unset;
+    margin-left: 50px;
+  }
+
+  #menu-caret {
+    margin: 0px 0px 0px 15px;
+  }
+
+  .circle-div {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .graph-image {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .charts-article {
+    padding: 5px;
+  }
+
   main {
     padding: 5px;
   }
@@ -783,6 +867,10 @@ form {
 
   .table-column2 {
     min-width: 80%;
+  }
+
+  article {
+    padding: 10px;
   }
 }
 
